@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+    <link rel="manifest" href="./assets/site.webmanifest">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programs</title>
+  <!-- Poppins Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: auto;
+      position: relative;
+    }
+
+    .card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card p {
+      margin: 15px;
+      font-size: 16px;
+      color: #333;
+      text-align: center;
+    }
+
+    .add-button {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 60px;
+      height: 60px;
+      background-color: #faa828;
+      color: #fff;
+      border-radius: 50%;
+      font-size: 32px;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .add-button:hover {
+      background-color: #e2941d;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Example Card 1 -->
+    <div class="card">
+      <img src="photo1.jpg" alt="Program 1">
+      <p>Program description 1</p>
+    </div>
+
+    <!-- Example Card 2 -->
+    <div class="card">
+      <img src="photo2.jpg" alt="Program 2">
+      <p>Program description 2</p>
+    </div>
+
+    <!-- Example Card 3 -->
+    <div class="card">
+      <img src="photo3.jpg" alt="Program 3">
+      <p>Program description 3</p>
+    </div>
+
+    <!-- More cards can be added dynamically -->
+  </div>
+
+  <!-- Floating Add Button -->
+  <a href="./adminlogin.html" class="add-button">+</a>
+
+</body>
+</html>
